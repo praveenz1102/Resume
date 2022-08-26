@@ -1,0 +1,976 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume - Praveen Singh</title>
+    <!--Meta Tags-->
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=EDGE">
+    <meta content="praveenz1102@gmail.com" name="praveenz1102@gmail.com">
+    <meta content="" name="author">
+    <!--End Meta Tags-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="resume/css/main.min.css" rel="stylesheet" type="text/css">
+
+    <script src="resume/scripts/resume.min.js"></script>
+
+    <style type="text/css">
+        #scrollUp {
+            background-image: url("resume/css/images/top.png");
+            bottom: 20px;
+            right: 20px;
+            width: 38px; /* Width of image */
+            height: 38px; /* Height of image */
+        }
+
+        #divbody {
+            background-color: #4d5b69;
+            font-family: calibri !important;
+        }
+
+        .panel .panel-body {
+            font-size: 14px !important;
+        }
+
+        a.accordion-toggle.accordion-toggle-styled.collapsed {
+            font-size: 14px;
+            font-family: calibri,Roboto,sans-serif;
+            color: #210406 !important;
+        }
+
+        .timeline-body-content {
+            margin-top: 40px !important;
+        }
+
+        div.span.panel-title {
+            margin-right: 50px !important;
+        }
+
+        .img-responsive {
+            float: none;
+            margin: 0 auto;
+            width: 70%;
+            height: 50%;
+            padding-top: 15px;
+        }
+
+        h3#empName {
+            margin-top: 0;
+        }
+
+        .ribbon-content {
+            padding: 5px !important;
+        }
+
+        .notesIcon {
+            margin: 0 12px 5px 12px;
+            background: rgba(230, 230, 230, 0.28);
+        }
+
+            .notesIcon i {
+                width: 15px;
+            }
+
+            .notesIcon .label.label-sm {
+                font-size: small !important;
+            }
+
+            .notesIcon span:nth-child(2) {
+                margin-left: 7px;
+            }
+
+        .timeline .timeline-icon {
+            padding-top: 22px !important;
+        }
+
+        .timeline .timeline-body {
+            margin-left: 100px !important;
+        }
+
+        .timeline-body.topMagnzero {
+            margin-top: 0 !important;
+        }
+
+        .timeline-body {
+            padding: 10px 20px 10px 20px !important;
+        }
+
+        .note {
+            margin: 0 0 10px !important;
+            padding: 10px 30px 10px 15px !important;
+        }
+
+        i.fa.fa-download {
+            color: #0064cd !important;
+            margin-left: 10px;
+        }
+
+        .mt-element-card .mt-card-item .mt-card-content .mt-card-desc {
+            margin: 0 !important;
+        }
+
+        .bg-white.mt-card-content, .mt-element-ribbon.bg-white, .timeline-body {
+            box-shadow: 1px 3px 4px 1px #ccc;
+            padding-bottom: 10px;
+        }
+
+        .mt-element-card .mt-card-item {
+            margin-bottom: 20px !important;
+        }
+
+        .bordrTble {
+            border: 1px solid #ddd;
+        }
+
+        .badge {
+            margin-top: -17px !important;
+            margin-left: -19px !important;
+        }
+
+        .expbdgCon {
+            float: left;
+        }
+
+        li.skill {
+            color: #2f2c2c;
+            background: #eaeaea;
+            box-shadow: 1px 4px 3px #969696;
+            border: 1px solid #b1a8a8;
+            margin: 5px 30px 15px 2px !important;
+            padding: 10px 10px 5px 0 !important;
+        }
+
+        .badge-primary {
+            background-color: #F2784B;
+        }
+
+        .badge-secondry {
+            background-color: #659be0;
+        }
+
+        .label-primary {
+            background-color: #F2784B;
+        }
+
+        .label-secondry {
+            background-color: #659be0;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .timeline.white-bg {
+                padding: 0 20px;
+            }
+        }
+
+        @media only screen and (max-width:480px) {
+            .timeline .timeline-body {
+                margin-left: 76px !important;
+            }
+        }
+
+        div#page-content {
+            margin-left: 10px !important;
+            margin-top: -56px !important;
+            margin-right: 10px !important;
+            margin-bottom: 10px !important;
+        }
+
+        .project {
+            background-color: #fbdcde;
+            border-color: #f39da3;
+        }
+
+        .project-note-danger {
+            border-color: #f0868e !important;
+            background-color: #fbdcde !important;
+            border-left: 5px solid #eee;
+        }
+
+        .project-note-info {
+            background-color: #dbe8f8 !important;
+            border-color: #a0c2ec !important;
+            border-left: 5px solid #eee;
+        }
+
+        .project-note-warning {
+            background-color: #f8e38c !important;
+            border-color: #f4d249 !important;
+            border-left: 5px solid #eee;
+        }
+
+        .project-note-success {
+            background-color: #a7e6ec !important;
+            border-color: #6dd6df !important;
+            border-left: 5px solid #eee;
+        }
+
+        /*-------------------------------*/
+        .timeline .timeline-icon i {
+            font-size: 20px !important;
+        }
+
+        .timeline .timeline-badge {
+            float: left;
+            position: relative;
+            padding-right: 10px;
+            height: 40px;
+            width: 40px;
+            margin-top: 17px;
+        }
+
+        .timeline .timeline-icon {
+            width: 50px !important;
+            height: 50px !important;
+            border-radius: 50% !important;
+            padding-top: 15px !important;
+            padding-left: 15px !important;
+        }
+
+        .timeline .timeline-body {
+            margin-left: 72px !important;
+        }
+
+        .timeline:before {
+            margin-left: 24px !important;
+        }
+    </style>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background:#659be0;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #F2784B;
+        }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #0064cd;
+            }
+    </style>
+    <script>
+        //$(document).ready(function () {
+        //    var sdt = new Date('11/10/2008');
+        //    var difdt = new Date(new Date() - sdt);
+        //    var yrs = (difdt.toISOString().slice(0, 4) - 1970);
+        //    var month = (difdt.getMonth() + 1);
+        //    if (month == 12) {
+        //        yrs += 1; month = 0;
+        //    }
+        //    $("#sExp").html(yrs + "." + month + " Yrs ")
+        //    // alert((difdt.toISOString().slice(0, 4) - 1970) + " Yrs  " + (difdt.getMonth() + 1) + " Month ");
+        //});
+
+        function getExp(year) {
+            var sdt = new Date(year);
+            var difdt = new Date(new Date() - sdt);
+            var yrs = (difdt.toISOString().slice(0, 4) - 1970);
+            var month = (difdt.getMonth() + 1);
+            if (month == 12) {
+                yrs += 1; month = 0;
+            }
+            document.write(yrs + " Yrs ");
+            //$("#" + element).html(yrs + "." + month + " Yrs ")
+        }
+
+        $(document).ready(function () {
+            $("#gotop").on('click', function () {
+                $("html, body").animate({ scrollTop: 0 }, 4000);
+            });
+        });
+        //-----------scrollup------------
+        // Parse URL Queries Method
+        (function ($) {
+            $.getQuery = function (query) {
+                query = query.replace(/[\[]/, '\\\[').replace(/[\]]/, '\\\]');
+                var expr = '[\\?&]' + query + '=([^&#]*)';
+                var regex = new RegExp(expr);
+                var results = regex.exec(window.location.href);
+                if (results !== null) {
+                    return results[1];
+                } else {
+                    return false;
+                }
+            };
+        })(jQuery);
+
+        $(function () {
+            $.scrollUp({
+                animation: 'fade',
+                activeOverlay: '#00FFFF',
+                scrollImg: {
+                    active: true,
+                    type: 'background',
+                    src: 'resume/css/images/top.png'
+                }
+            });
+        });
+        //$('#scrollUpTheme').attr('href', 'css/themes/image.css?1.1');
+        // $('.image-switch').addClass('active');
+
+
+        // Toggle overlay
+        //$('#toggleActive').click(function () {
+        //    $('#scrollUp-active').toggle();
+
+        //    var text = $(this).text() == 'Hide activeOverlay' ? 'Show activeOverlay' : 'Hide activeOverlay';
+        //    $(this)
+        //        .text(text)
+        //        .toggleClass('active');
+        //});
+    </script>
+
+</head>
+<body class="page-sidebar-closed-hide-logo page-container-bg-solid page-sidebar-closed-hide-logo page-header-fixed page-sidebar-closed" id="divbody">
+    <div>
+        <div class="page-container">
+            <div class="page-content-wrapper">
+                <div id="page-content" class="page-content">
+                    <div class="page-content-body">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                <div class="mt-element-card mt-element-overlay">
+                                    <div class="mt-card-item">
+                                        <div class="bg-white mt-card-content">
+                                            <div class="profile-userpic"><img id="empName" src="resume/css/images/praveenKumarSingh.jfif" class="img-responsive" alt=""><br></div>
+                                            <h3 class="mt-card-name">Praveen Singh</h3>
+                                            <div class="notesIcon"><span class="mt-card-desc font-grey-mint" title="Current Designation">Apps Development Module Lead | <a class="mt-card-desc font-grey-mint" target="blank" href="https://www.telusinternational.com/" title="Current Company">Telus International</a></span></div>
+                                            <div class="notesIcon"><span class="mt-card-desc font-grey-mint" title="Email"><a class="mt-card-desc font-grey-mint" href="mailto:praveenz1102@gmail.com">praveenz1102@gmail.com</a></span> | <span class="mt-card-desc font-grey-mint" id="prof_phone">9811527273</span> </div>
+                                            <div class="notesIcon">
+                                                <span class="mt-card-desc font-grey-mint" title="Office Location"> Noida</span> | <span class="mt-card-desc font-grey-mint"> Ready to relocate <i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+                                            </div>  <div class="notesIcon"> <span class="mt-card-desc font-grey-mint"><b>CTC</b> 11.5 | <b>ECTC</b>  | <b>Notic</b> 30 days</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-element-ribbon bg-white">
+                                    <div class="ribbon ribbon-shadow ribbon-color-primary uppercase">
+                                        Professional Information
+                                    </div>
+                                    <p class="ribbon-content">
+                                    </p><div>
+                                        <div class="notesIcon"><span class="label label-sm label-success" title="Date of Joining"><i class="fa fa-sign-in" aria-hidden="true"></i></span><span>11/10/2008</span></div>
+                                        <div class="notesIcon">
+                                            <span class="label label-sm label-warning" title="Experience"><i class="fa fa-user-secret" aria-hidden="true"></i></span><span id="sExp">
+                                                <script>getExp('11/10/2008')</script>
+                                            </span>
+                                        </div>
+                                        <div class="notesIcon"><span class="label label-sm label-success" title="Technology"><i class="fa fa-users" aria-hidden="true"></i></span><span>.Net</span></div>
+                                        <div class="notesIcon"><span class="label label-sm label-danger" title="CoE"><i class="fa fa-users" aria-hidden="true"></i></span><span>Microsoft</span></div>
+                                        <div class="notesIcon"><span class="label label-sm label-warning" title="Employee Type"><i class="fa fa-black-tie" aria-hidden="true"></i></span><span>Full Time Employee</span></div>
+                                        <div class="notesIcon"><span class="label label-sm label-info" title="Company"><i class="fa fa-building-o" aria-hidden="true"></i></span><span><a target="blank" style="color:#2f2c2c;" href="https://www.telusinternational.com/">Telus International</a></span></div>
+                                        <div class="notesIcon"><span class="label label-sm label-success" title="Office Address"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span><a class="mt-card-desc font-grey-mint" target="blank" href="https://www.google.co.in/maps/place/Xavient+Digital+Powered+By+Telus+International/@28.5358347,77.3985616,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce8b83fd900a9:0x5d90d6a20929d4dd!8m2!3d28.53583!4d77.4007503/">54 NSEZ, Phase 2, Noida, 201301</a></span></div>
+
+                                    </div>
+
+                                </div>
+                                <div class="mt-element-ribbon bg-white">
+                                    <div class="ribbon ribbon-shadow ribbon-color-info uppercase">
+                                        Personal Information
+                                    </div>
+                                    <p class="ribbon-content">
+                                    </p>
+
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-danger" title="Gender"><i class="fa fa-venus-mars" aria-hidden="true"></i></span><span>Male</span>
+                                    </div>
+
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-danger" title="Blood Group"><i class="fa fa-tint" aria-hidden="true"></i></span><span>O +ve</span>
+                                    </div>
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-info" title="PAN"> <i class="fa fa-book"> </i> </span><span>BKBPS7106M</span>
+                                    </div>
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-success" title="Passport"> <i class="fa fa-book"> </i> </span><span>P6654296</span>
+                                    </div>
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-info" title="Marital Status"><i class="fa fa-heartbeat" aria-hidden="true"></i></span><span>Married</span>
+                                    </div>
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-danger" title="Birthday">  <i class="fa fa-birthday-cake"></i></span><span>07/10/1983</span>
+                                    </div>
+
+                                </div>
+                                <div class="mt-element-ribbon bg-white">
+                                    <div class="ribbon ribbon-shadow ribbon-color-success uppercase"> Contact Information </div>
+                                    <p class="ribbon-content"></p>
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-info" title="Contact"><i class="fa fa-phone"></i></span><span>+91-9811527273</span>
+                                    </div>
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-warning" title="Email"> <i class="fa fa-envelope-o"></i> </span><span><a target="_blank" style="color:#2f2c2c;" href="mailto:praveenz1102@gmail.com">praveenz1102@gmail.com</a></span>
+                                    </div>
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-danger" title="Address"><i class="fa fa-home" aria-hidden="true"></i></span><span>Gaur Atulyam </span>
+                                    </div>
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-info" title="Address"><i class="fa fa-map-marker"> </i></span><span><a target="_blank" style="color:#2f2c2c;" href="https://www.google.co.in/maps/place/Gaur+Atulyam/@28.4620437,77.5562182,17z/data=!3m1!4b1!4m5!3m4!1s0x390cbff9960dff59:0x31e08a6d40e5c426!8m2!3d28.4620395!4d77.5584072">Omicron 1, Greater Noida, UP, 201310</a></span>
+                                    </div>
+                                    <!--<div class="notesIcon">
+                                        <span class="label label-sm label-info" title="Emergency Contact Person"><i class="fa fa-user" aria-hidden="true"></i></span><span>Kamal Deo Singh</span>
+                                    </div>-->
+                                </div>
+                                <div class="mt-element-ribbon bg-white">
+                                    <div class="ribbon ribbon-shadow ribbon-color-danger uppercase">
+                                        Family Information
+                                    </div>
+                                    <p class="ribbon-content">
+                                    </p><div class="notesIcon">
+                                        <span class="label label-sm label-danger" title="Father"><i class="fa fa-male" aria-hidden="true"></i></span><span>Kamal Deo Singh</span>
+                                    </div>
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-info" title="Mother"><i class="fa fa-female" aria-hidden="true"></i></span><span>Meera Singh</span>
+                                    </div>
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-danger" title="Spouse"> <i class="fa fa-street-view" aria-hidden="true"></i></span><span>Nidhi Singh</span>
+                                    </div>
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-warning" title="Son"> <i class="fa fa-child" aria-hidden="true"></i></span><span>Aakarsh Tomar </span>
+                                    </div>
+                                    <div class="notesIcon">
+                                        <span class="label label-sm label-info" title="Anniversary"><i class="fa fa-gift" aria-hidden="true"></i></i></span><span>04/29/2013</span>
+                                    </div>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 padZero">
+                                <div class="timeline  white-bg ">
+                                    <!-- TIMELINE ITEM Skills-->
+                                    <div class="timeline-item">
+                                        <div class="timeline-badge">
+                                            <div class="bg-red timeline-icon">
+                                                <i class="icon-home font-white"></i>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-body topMagnzero">
+                                            <div class="timeline-body-arrow">
+                                            </div>
+                                            <div class="timeline-body-head">
+                                                <div class="timeline-body-head-caption">
+                                                    <span class="font-black" style="font-size: 24px">Skills</span>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-body-content">
+                                                <ul class="nav nav-pills">
+                                                    <li class="skill">
+                                                        <div class="badgCon">
+                                                            <div class="expbdgCon">
+                                                                <span class="badge badge-primary pull-left" title="Type"> Primary </span><br><span class="badge badge-primary pull-left" title="Year">
+                                                                    <script>getExp('11/3/2009')</script>
+                                                                </span> <br><span class="badge badge-primary pull-left" title="Rating"> 8 Rating</span>
+                                                            </div> .Net
+                                                        </div>
+                                                    </li>
+                                                    <li class="skill">
+                                                        <div class="badgCon">
+                                                            <div class="expbdgCon">
+                                                                <span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year">
+                                                                    <script>getExp('11/3/2009')</script>
+                                                                </span><br><span class="badge badge-secondry pull-left" title="Rating"> 9 Rating</span>
+                                                            </div> C#
+                                                        </div>
+                                                    </li>
+                                                    <li class="skill">
+                                                        <div class="badgCon">
+                                                            <div class="expbdgCon">
+                                                                <span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year">
+                                                                    <script>getExp('11/3/2009')</script>
+                                                                </span><br><span class="badge badge-secondry pull-left" title="Rating"> 9 Rating</span>
+                                                            </div> OOPS
+                                                        </div>
+                                                    </li>
+                                                    <li class="skill">
+                                                        <div class="badgCon">
+                                                            <div class="expbdgCon">
+                                                                <span class="badge badge-primary pull-left" title="Type"> Primary </span><br><span class="badge badge-primary pull-left" title="Year">
+                                                                    <script>getExp('11/3/2009')</script>
+                                                                </span><br><span class="badge badge-primary pull-left" title="Rating"> 9 Rating</span>
+                                                            </div> SQL
+                                                        </div>
+                                                    </li>
+                                                    <li class="skill">
+                                                        <div class="badgCon">
+                                                            <div class="expbdgCon">
+                                                                <span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year">
+                                                                    <script>getExp('11/3/2014')</script>
+                                                                </span><br><span class="badge badge-secondry pull-left" title="Rating"> 8 Rating</span>
+                                                            </div> JSON
+                                                        </div>
+                                                    </li>
+                                                    <li class="skill">
+                                                        <div class="badgCon">
+                                                            <div class="expbdgCon">
+                                                                <span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year">
+                                                                    5 Year
+                                                                </span><br><span class="badge badge-secondry pull-left" title="Rating"> 8 Rating</span>
+                                                            </div> WCF/REST
+                                                        </div>
+                                                    </li>
+                                                    <li class="skill"><div class="badgCon"><div class="expbdgCon"><span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year"> 5 Year </span><br><span class="badge badge-secondry pull-left" title="Rating"> 9 Rating</span></div> Jquery </div></li>
+                                                    <li class="skill"><div class="badgCon"><div class="expbdgCon"><span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year"> 2.5 Year </span><br><span class="badge badge-secondry pull-left" title="Rating"> 7 Rating</span></div> MVC </div></li>
+                                                    <li class="skill"><div class="badgCon"><div class="expbdgCon"><span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year"> 2 Year </span><br><span class="badge badge-secondry pull-left" title="Rating"> 6 Rating</span></div> Angular </div></li>
+                                                    <li class="skill"><div class="badgCon"><div class="expbdgCon"><span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year"> 7 Year </span><br><span class="badge badge-secondry pull-left" title="Rating"> 6 Rating</span></div> ASP.NET </div></li>
+                                                    <li class="skill"><div class="badgCon"><div class="expbdgCon"><span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year"> 7 Year </span><br><span class="badge badge-secondry pull-left" title="Rating"> 6 Rating</span></div> Design & Patterns </div></li>
+                                                    <li class="skill"><div class="badgCon"><div class="expbdgCon"><span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year"> 7 Year </span><br><span class="badge badge-secondry pull-left" title="Rating"> 6 Rating</span></div> IIS/Build Deployment </div></li>
+                                                    <li class="skill"><div class="badgCon"><div class="expbdgCon"><span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year"> 7 Year </span><br><span class="badge badge-secondry pull-left" title="Rating"> 6 Rating</span></div> Web Services </div></li>
+                                                    <li class="skill"><div class="badgCon"><div class="expbdgCon"><span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year"> 7 Year </span><br><span class="badge badge-secondry pull-left" title="Rating"> 6 Rating</span></div> Entity Framework </div></li>
+                                                    <li class="skill"><div class="badgCon"><div class="expbdgCon"><span class="badge badge-secondry pull-left" title="Type"> Secondry </span><br><span class="badge badge-secondry pull-left" title="Year"> 7 Year </span><br><span class="badge badge-secondry pull-left" title="Rating"> 6 Rating</span></div> Agile/Scrum </div></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- TIMELINE ITEM Project -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-badge">
+                                            <div class="timeline-icon">
+                                                <i class="icon-user-following font-green-haze"></i>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <div class="timeline-body-arrow">
+                                            </div>
+                                            <div class="timeline-body-head">
+                                                <div class="timeline-body-head-caption">
+                                                    <span class="font-black " style="font-size: 24px">Project Assignments</span>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-body-content table-responsive">
+                                                <div class="portlet-body">
+                                                    <div class="panel-group accordion" id="accordion3">
+                                                        <div id="divcollapse_1_1" class="panel panel-default">
+                                                            <div class="panel-heading project-note-danger">
+                                                                <h4 class="panel-title desc">
+                                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse"
+                                                                       data-parent="#accordion3" href="#collapse_1_1" aria-expanded="false">
+                                                                        <span title="Project"> <i class="fa fa-laptop"></i>   XAP - Xavient Access Portal (ERP) </span>
+                                                                        <span title="Client"> <i class="fa fa-meh-o"></i>  Xavient Information Systems </span>
+                                                                        <span title="Duration"> <i class="fa fa-calendar-times-o"></i> April 2018 – Present</span>
+                                                                        <span title="Role"> <i class="fa fa-user-md"></i> Lead/Developer</span>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapse_1_1" class="panel-collapse collapse " aria-expanded="false" style="height:0px;">
+                                                                <div class="panel-body" style="height: 200px; overflow-y:auto;">
+                                                                    <div class="notesIcon timeline-item">
+                                                                        <strong> Tools & Technology:</strong>
+                                                                        ASP. NET Framework 4.6/4.5, C#.Net, ASP. Net, SQL Query, Web services (REST) WCF, AJAX, JavaScript, JQuery, Bootstrap, DHTML, CSS, Visual Studio 2015/2012, SQL Server 2012, Bugzilla for Test Management and CVS/GIT for versioning.<br />
+                                                                        <strong>Description:</strong>XAP is an ERP for an organization. It is a combination of Human Resource Management System (HRMS), Leave Management System (LMS), Time Management System (TMS), Payroll, Assessment Management System, Incident Management System, Learning Management System and Recruitment Management System. The solution allows an organization to follow paperless workflow. It covers entire process from joining of a new employee to its separation process. XAP is a dynamic web based application gateway that enables Xavient employee(s) to access the basic XAP functionalities (module) like
+                                                                        <ul>
+                                                                            <li>Leave & Attendance (LMS)</li>
+                                                                            <li>Human Resource Management System (HRMS)</li>
+                                                                            <li>Performance Acceleration System (XPAS)</li>
+                                                                            <li>Applicant Tracking System (ATS)</li>
+                                                                            <li>Learning Management System (eLearning)</li>
+                                                                            <li>Transport Management System (TMS) </li>
+                                                                            <li>Quarterly Party Management system (QPMS)</li>
+                                                                            <li>HelpDx/IT Service Desk</li>
+                                                                        </ul>
+                                                                        <strong> Responsibilities:</strong>
+                                                                        <ul>
+                                                                            <li>Requirement gathering from stakeholders & analysis of requirements.</li>
+                                                                            <li>Impacts analysis for requirements on existing systems.</li>
+                                                                            <li>Preparation of REST services and designing database as per the requirement.</li>
+                                                                            <li>Development & integration of front end with backend.</li>
+                                                                            <li>Deployment on test environment</li>
+                                                                            <li>Defect fixing and monitoring till closure</li>
+                                                                            <li>Deployment on production environment and production support</li>
+                                                                            <li>Peer help/ Team handling</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="divcollapse_1_2" class="panel panel-default">
+                                                            <div class="panel-heading project-note-info">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse"
+                                                                       data-parent="#accordion3" href="#collapse_1_2" aria-expanded="false">
+                                                                        <span title="Project"> <i class="fa fa-laptop"></i>  TMO (T-Mobile)</span>
+                                                                        <span title="Client"> <i class="fa fa-meh-o"></i>   T-Mobile USA  </span>
+                                                                        <span title="Duration"> <i class="fa fa-calendar-times-o"></i> March 2017 - April 2018</span>
+                                                                        <span title="Role"> <i class="fa fa-user-md"></i> Developer</span>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapse_1_2" class="panel-collapse collapse" aria-expanded="false">
+                                                                <div class="panel-body" style="height: 200px; overflow-y:auto;">
+                                                                    <div class="notesIcon">
+                                                                        <strong>Tools & Technology:</strong>Microsoft Visual Studio 2013, C#, ASP .Net, MVC 5, JQuery, CSS, JavaScript AccuRev, Cruise Control (web deployment tool ), JIRA(Task tracking tool), InView (Assets tracking tool) and monitoring tool.<br />
+                                                                        <strong> Description:</strong> The company operates the third largest wireless network in the U.S. T-Mobile USA is a national provider of wireless voice, messaging, and data, all built on America’s fastest 4G LTE Network. Now covering 308 million Americans, T-Mobile is growing faster than ever, all while abolishing the restrictions, runarounds, overages, and over-promises by other wireless companies. T-Mobile website is use for selling deals, phone and plans for customers.
+                                                                        MYTMO is used by T-Mobile customer for manage their plans, upgrade phone and purchase device and accessories.<br />
+                                                                        <strong>Responsibilities:</strong>
+                                                                        <ul>
+                                                                            <li>Analyzing and understanding the requirements</li>
+                                                                            <li>Application design, coding and code review</li>
+                                                                            <li>Client communication, Integration testing</li>
+                                                                            <li>Defect fixing and monitoring till closure</li>
+                                                                            <li>Web deployment</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="divcollapse_1_3" class="panel panel-default">
+                                                            <div class="panel-heading project-note-warning">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse"
+                                                                       data-parent="#accordion3" href="#collapse_1_3" aria-expanded="false">
+                                                                        <span title="Project"> <i class="fa fa-laptop"></i> Content Management System (MYTMO)</span>
+                                                                        <span title="Client"> <i class="fa fa-meh-o"></i>  T-Mobile USA  </span>
+                                                                        <span title="Duration"> <i class="fa fa-calendar-times-o"></i> Sep 2016 - March 2017</span>
+                                                                        <span title="Role"> <i class="fa fa-user-md"></i> Developer</span>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapse_1_3" class="panel-collapse collapse" aria-expanded="false">
+                                                                <div class="panel-body" style="height: 200px; overflow-y:auto;">
+                                                                    <div class="notesIcon">
+                                                                        <strong>Tools & Technology:</strong> Microsoft Visual Studio 2013, C#, ASP .Net, MVC 5, JQuery, CSS and JavaScript.<br />
+                                                                        <strong>Description:</strong> CMS is a tool to create/update/view the assets (XML file) for t-Mobile.com and my.t-mobile.com websites. These XML files are used to update contents of the applications on the fly. This tool has replaced the ‘Site Refresh’ third party tool used earlier by client. This tool fully support all schemas of XML files that were supported by the previous tool with extended feature where the new tool integrate with our repository tool (AccuRev) which makes the content changes process much easier.<br />
+                                                                        <strong>Responsibilities:</strong>
+                                                                        Analyzing and understanding the requirements, application design, coding and code review, client communication, Integration testing and Web deployment.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="divcollapse_1_4" class="panel panel-default">
+                                                            <div class="panel-heading project-note-success">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse"
+                                                                       data-parent="#accordion3" href="#collapse_1_4" aria-expanded="false">
+                                                                        <span title="Project"> <i class="fa fa-laptop"></i> Patient Portal Implementation</span>
+                                                                        <span title="Client"> <i class="fa fa-meh-o"></i>   Md Synergy Solution, LCC  </span>
+                                                                        <span title="Duration"> <i class="fa fa-calendar-times-o"></i>  Jan 2015 - Sep 2016</span>
+                                                                        <span title="Role"> <i class="fa fa-user-md"></i>   Developer/Mentor</span>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapse_1_4" class="panel-collapse collapse" aria-expanded="false">
+                                                                <div class="panel-body" style="height: 200px; overflow-y:auto;">
+                                                                    <div class="notesIcon">
+                                                                        <strong>Tools & Technology:</strong> ASP. NET Framework 4.5, C#.Net, ASP. Net, SQL, Web services (REST) WCF, AJAX, JavaScript, JQuery, Visual Studio 2012, SQL Server 2012, Bugzilla for Test Management and CVS for versioning.<br />
+                                                                        <strong>Description:</strong> Patient portal software offers a coordinated, online patient communication platform and provides an expert assistance to help navigate patient Health IT landscape, build better patient-provider relationships and achieve Meaningful Use. Portals have a full range of completely customizable features. Every Practice can do the configuration of its patient portal as per there need. Features like Appointments, Message, Receive Clinical Summaries, View Health Summary (Widgets), Get Medical Advice, Documents, Playbills, Dashboard and Configurations are available for patients.<br />
+                                                                        <strong>Responsibilities:</strong>
+                                                                        <ul>
+                                                                            <li>Analyzing and understanding the requirements</li>
+                                                                            <li>Designing database/Stord procedure as per the requirement</li>
+                                                                            <li> Application design, coding and code review</li>
+                                                                            <li>Client communication, Integration testing</li>
+                                                                            <li>Defect fixing and monitoring till closure</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="divcollapse_1_5" class="panel panel-default">
+                                                            <div class="panel-heading project-note-danger">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse"
+                                                                       data-parent="#accordion3" href="#collapse_1_5" aria-expanded="false">
+                                                                        <span title="Project"> <i class="fa fa-laptop"></i> ATS (Applicant Tracking System)</span>
+                                                                        <span title="Client"> <i class="fa fa-meh-o"></i>   Xavient Information Systems</span>
+                                                                        <span title="Duration"> <i class="fa fa-calendar-times-o"></i>  Nov 2013 – Dec 2014</span>
+                                                                        <span title="Role"> <i class="fa fa-user-md"></i>   Developer/Lead</span>
+
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapse_1_5" class="panel-collapse collapse" aria-expanded="false">
+                                                                <div class="panel-body" style="height: 200px; overflow-y:auto;">
+                                                                    <div class="notesIcon">
+                                                                        <strong>Tools & Technology:</strong> .NET Framework 4.0, C#.Net, ASP. Net, SQL, Web services AJAX, JavaScript, JQuery, Bootstrap, CSS, Visual Studio 2012, SQL Server 2012, Bugzilla and CVS for versioning.<br />
+                                                                        <strong>Description:</strong> Applicant Tracking System (ATS) is a multi-component web based software system designed to automate processes involved in finding, attracting, assessing, interviewing and hiring new personnel. This application replaces the manual recruiting efforts with an automated and customized hiring system. The system also enables recruiters in analyzing the best-fit candidates, tracking applicants, as well as routing them to HR and hiring managers.<br />
+                                                                        <strong>Responsibilities:</strong>
+                                                                        <ul>
+                                                                            <li>Implementation of work request</li>
+                                                                            <li>Coding for backend and frontend</li>
+                                                                            <li>Resolve issue of running application</li>
+                                                                            <li>Optimization for backend and frontend</li>
+                                                                            <li>Writing stored procedures and scripts</li>
+                                                                            <li>Enhancement and support</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="divcollapse_1_6" class="panel panel-default">
+                                                            <div class="panel-heading project-note-warning">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse"
+                                                                       data-parent="#accordion3" href="#collapse_1_6" aria-expanded="false">
+                                                                        <div>
+                                                                            <span title="Project"> <i class="fa fa-laptop"></i> HRMS (Human Resource Management System)</span>
+                                                                            <span title="Client"> <i class="fa fa-meh-o"></i>   Xavient Information Systems</span>
+                                                                            <span title="Duration"> <i class="fa fa-calendar-times-o"></i>  April 2011 – Nov 2013</span>
+                                                                            <span title="Role"> <i class="fa fa-user-md"></i>   Developer/Lead</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapse_1_6" class="panel-collapse collapse" aria-expanded="false">
+                                                                <div class="panel-body" style="height: 200px; overflow-y:auto;">
+                                                                    <div class="notesIcon">
+                                                                        <strong>Tools & Technology:</strong> .NET Framework 4.0, C#.Net, ASP. Net, SQL, Web Services ,AJAX, JavaScript, Visual Studio 2010, SQL Server 2012/2008, Bugzilla and CVS for versioning.<br />
+                                                                        <strong>Description:</strong> The function of human resource (HR) department is generally administrative and common to all organization. Organization may have formalized selection, evaluation, and payroll process. Efficient and effective management of ‘Human Capital’ progressed to an increasingly imperative and complex process. The HR function consists of tracking existing employee data which traditionally includes personal histories, skills, capabilities, accomplishments and salary. To reduce the manual workload of these administrative activities, organizations began to electronically automate many of these processes by introducing specialized human resource management systems. HR executives rely on internal or external IT professionals to develop and maintain an integrated HRMS.
+                                                                        In consequence of the high capital investment necessary to buy or program proprietary software, this internally developed HRMS was limited to Xavient Information Systems that possessed a large amount of capital. The advent of client–server, application service provider, and software as a service (SaaS) or human resource management systems enabled increasingly higher administrative control of such systems.<br />
+                                                                        <strong>Role & Responsibilities:</strong>
+                                                                        <ul>
+                                                                            <li>Implementation of work request, Coding for backend and frontend</li>
+                                                                            <li>Resolve issue of running application</li>
+                                                                            <li> Optimization for backend and frontend, Writing stored procedures and DB scripts</li>
+                                                                            <li>Enhancement and support</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="divcollapse_1_7" class="panel panel-default">
+                                                            <div class="panel-heading project-note-info">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse"
+                                                                       data-parent="#accordion3" href="#collapse_1_7" aria-expanded="false">
+                                                                        <span title="Project"> <i class="fa fa-laptop"></i> LMS (Leave Management System)</span>
+                                                                        <span title="Client"> <i class="fa fa-meh-o"></i>   Xavient Information Systems  </span>
+                                                                        <span title="Duration"> <i class="fa fa-calendar-times-o"></i>  Nov 2012 – Dec 2015 </span>
+                                                                        <span title="Role"> <i class="fa fa-user-md"></i>   Developer</span>
+
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapse_1_7" class="panel-collapse collapse" aria-expanded="false">
+                                                                <div class="panel-body" style="height: 200px; overflow-y:auto;">
+                                                                    <div class="notesIcon">
+                                                                        <strong>Tools & Technology:</strong> .NET Framework 4.5/4.0, Visual Studio 2012/2010, C#, ADO.NET, Web services SOAP/ WCF, SQL SERVER 2012/2008, CVS.
+                                                                        <strong>Description:</strong> LMS is a web based application responsible for handling all the processes related to leave and attendance management of every employee. An Employee can basically see his attendance and leave details, apply/cancel different categories of leaves. The level of view changes with the access level of the employee accessing the application, i.e. for a reporting manager, LMS reflects logged in user’s data with all leave & attendance data of the employees reporting to him.
+                                                                        <strong> Role & Responsibilities:</strong>
+                                                                        <ul>
+                                                                            <li>Requirement gathering from stakeholders & analysis of requirement and impacts of requirement on existing system.</li>
+                                                                            <li>Preparation of web services and designing database as per the requirement</li>
+                                                                            <li>Development & Integration of front end with backend</li>
+                                                                            <li>Deployment on test environment</li>
+                                                                            <li>Defect fixing and monitoring till closure</li>
+                                                                            <li>Deployment on production environment</li>
+                                                                            <li>Production support</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="divcollapse_1_8" class="panel panel-default">
+                                                            <div class="panel-heading project-note-success">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse"
+                                                                       data-parent="#accordion3" href="#collapse_1_8" aria-expanded="false">
+                                                                        <span title="Project"> <i class="fa fa-laptop"></i> XPAS (Xavient Performance Acceleration System)</span>
+                                                                        <span title="Client"> <i class="fa fa-meh-o"></i>   Xavient Information Systems  </span>
+                                                                        <span title="Duration"> <i class="fa fa-calendar-times-o"></i>  April 2011 – Nov 2012 </span>
+                                                                        <span title="Role"> <i class="fa fa-user-md"></i>   Developer</span>
+
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapse_1_8" class="panel-collapse collapse" aria-expanded="false">
+                                                                <div class="panel-body" style="height: 200px; overflow-y:auto;">
+                                                                    <div class="notesIcon">
+                                                                        <strong>Tools & Technology:</strong> .NET Framework 4.0, C#.Net, ASP. Net, SQL, Web services (SOAP), AJAX, JavaScript, Visual Studio 2010, SQL Server 2010 and CVS for versioning.<br />
+                                                                        <strong> Description:</strong> XPAS is a web based application responsible for handling all the processes related to measure performance of the employee by the reporting manager and project manager.
+                                                                        A reporting manager prepares the rating norms for his subordinate which is subsequently accepted and completed by the subordinate. Then System sends the notification to review and rate the subordinate on the norms assigned. Once the ratings are approved by the reporting manager, system sends the generated report to the next level of approval i.e. Project manager. Once approved by the project manager the employee is asked to review and accept the rating provided on the basis of his performance. System finally generates the rating of every quarter for an employee which could further be used in performance appraisals of an employee.<br />
+                                                                        <strong>Role & Responsibilities:</strong>
+                                                                        <ul>
+                                                                            <li>Requirement gathering from stakeholders & analysis of requirement and impacts of requirement on existing system.</li>
+                                                                            <li>Write business logic and coding in C#.</li>
+                                                                            <li>Create Tables and stored procedures</li>
+                                                                            <li>Development & Integration of front end with backend</li>
+                                                                            <li>Deployment on production environment and support</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="divcollapse_1_9" class="panel panel-default">
+                                                            <div class="panel-heading project-note-warning">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse"
+                                                                       data-parent="#accordion3" href="#collapse_1_9" aria-expanded="false">
+                                                                        <span title="Project"> <i class="fa fa-laptop"></i> Hallwaze</span>
+                                                                        <span title="Client"> <i class="fa fa-meh-o"></i> Hallwaze  </span>
+                                                                        <span title="Duration"> <i class="fa fa-calendar-times-o"></i> Aug 2010 – March 2011 </span>
+                                                                        <span title="Role"> <i class="fa fa-user-md"></i> Developer</span>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapse_1_9" class="panel-collapse collapse" aria-expanded="false">
+                                                                <div class="panel-body" style="height: 200px; overflow-y:auto;">
+                                                                    <div class="notesIcon">
+                                                                        <strong>Tools & Technology:</strong> C#.Net, ASP. Net, Web services, AJAX, JavaScript, DHTML, CSS, Visual Studio 2010, SQL Server 2008, Bugzilla for Test Management and CVS for versioning.<br />
+                                                                        <strong>Description:</strong>  This is a product with an aim to enable collaboration amongst employees so that work is done and achieved from employees in real time.  It is a modern communication platform for smarter teams and organization.  It focuses on team communication, Document collaboration and quick communication amongst top to bottom in the organization.<br />
+                                                                        <strong>Role & Responsibilities:</strong>
+                                                                        <ul>
+                                                                            <li> Analyzing and understanding the requirements, application design, coding and code review.</li>
+                                                                            <li>Defect fixing and monitoring till closure</li>
+                                                                        </ul>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- TIMELINE ITEM Experience-->
+                                    <div class="timeline-item">
+                                        <div class="timeline-badge">
+                                            <div class="timeline-icon">
+                                                <i class="icon-docs font-red-intense"></i>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <div class="timeline-body-arrow">
+                                            </div>
+                                            <div class="timeline-body-head">
+                                                <div class="timeline-body-head-caption">
+                                                    <span class="font-black " style="font-size: 24px">Achievements</span>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-body-content">
+                                                <div class="note note-danger note-bordered"><i class="fa fa-trophy" aria-hidden="true"></i> Employee of the Month </div>
+                                                <div class="note note-info note-bordered"><i class="fa fa-trophy" aria-hidden="true"></i>   Pat on the Back</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- TIMELINE ITEM Experience-->
+                                    <div class="timeline-item">
+                                        <div class="timeline-badge">
+                                            <div class="timeline-icon">
+                                                <i class="icon-user-following font-green-haze"></i>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <div class="timeline-body-arrow">
+                                            </div>
+                                            <div class="timeline-body-head">
+                                                <div class="timeline-body-head-caption">
+                                                    <span class="font-black " style="font-size: 24px">Work Experience</span>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-body-content">
+                                                <div class="note note-danger note-bordered"><i class="fa fa-briefcase" aria-hidden="true"></i>  Working as Module Lead since 05/01/2017 </div>
+                                                <div class="note note-info note-bordered"><i class="fa fa-briefcase" aria-hidden="true"></i>    Worked as Senior Software Engineer from 05/01/2013 to 05/01/2017 </div>
+                                                <div class="note note-warning note-bordered"><i class="fa fa-briefcase" aria-hidden="true"></i> Worked as Software Engineer from 02/10/2011 to 05/01/2013 </div>
+                                                <div class="note note-info note-bordered"><i class="fa fa-briefcase" aria-hidden="true"></i>    Worked as Associate Software Engineer from 08/30/2009 to 02/10/2011</div>
+                                                <div class="note note-success note-bordered"><i class="fa fa-briefcase" aria-hidden="true"></i> Worked as Trainee from 11/10/2008 to 08/30/2009  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- TIMELINE ITEM Travel-->
+                                    <div class="timeline-item">
+                                        <div class="timeline-badge">
+                                            <div class="bg-blue timeline-icon"><i class="fa fa-graduation-cap font-white"></i></div>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <div class="timeline-body-arrow"></div>
+                                            <div class="timeline-body-head">
+                                                <div class="timeline-body-head-caption"><span class="font-black " style="font-size: 24px">Education</span></div>
+                                                
+                                            </div>
+                                            <div class="timeline-body-content">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-4 col-xs-12">
+                                                        <div class="note note-danger note-bordered"><i class="fa fa-graduation-cap" aria-hidden="true"></i> MCA (Master of Computer Application) from UPTU. </div>
+                                                        
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-4 col-xs-12">
+                                                        <div class="note note-info note-bordered"><i class="fa fa-graduation-cap" aria-hidden="true"></i>   BSc. (P.C.M) from Purvanchal University Jaunpur, U.P. </div>
+                                                        
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-4 col-xs-12">
+                                                        <div class="note note-warning note-bordered"><i class="fa fa-graduation-cap" aria-hidden="true"></i>    10+2 from U.P. Board</div>
+                                                        
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-4 col-xs-12">
+                                                        <div class="note note-success note-bordered"><i class="fa fa-graduation-cap" aria-hidden="true"></i>   10th from M.P. Board</div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- TIMELINE ITEM Education-->
+                                    <!--<div class="timeline-item">
+                                        <div class="timeline-badge">
+                                            <div class="bg-blue-madison timeline-icon">
+                                                <i class="fa fa-graduation-cap font-white"></i>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <div class="timeline-body-arrow">
+                                            </div>
+                                            <div class="timeline-body-head">
+                                                <div class="timeline-body-head-caption">
+                                                    <span class="font-black " style="font-size: 24px">Education &amp; Certifications</span>
+                                                </div>
+                                                <div class="timeline-body-head-actions">
+                                                </div>
+                                            </div>
+                                            <div class="timeline-body-content">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-4 col-xs-12">
+                                                        <div class="mt-element-ribbon  bg-blue">
+                                                            <div class="ribbon ribbon-shadow ribbon-color-purple uppercase">Education</div>
+                                                            <p class="ribbon-content" style="color:white">MCA (Master of Computer Application) from UPTU.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-4 col-xs-12">
+                                                        <div class="mt-element-ribbon  bg-blue">
+                                                            <div class="ribbon ribbon-shadow ribbon-color-purple uppercase">Education</div>
+                                                            <p class="ribbon-content" style="color:white">BSc. (P.C.M) from Purvanchal University Jaunpur, U.P. </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-4 col-xs-12">
+                                                        <div class="mt-element-ribbon  bg-blue">
+                                                            <div class="ribbon ribbon-shadow ribbon-color-purple uppercase">Education</div>
+                                                            <p class="ribbon-content" style="color:white">10+2 from U.P. Board</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-4 col-xs-12">
+                                                        <div class="mt-element-ribbon  bg-blue">
+                                                            <div class="ribbon ribbon-shadow ribbon-color-purple uppercase">Education</div>
+                                                            <p class="ribbon-content" style="color:white">10th from M.P. Board</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer" id="gotop" style="cursor:pointer">
+            &copy;praveensingh
+        </div>
+
+        <!--<div id="scrollUp" style="display:none;">
+            <i class="fa fa-arrow-circle-up"></i>
+        </div>-->
+
+    </div>
+
+</body>
+</html>
